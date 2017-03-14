@@ -1,0 +1,31 @@
+#!/usr/bin/env python
+
+import time
+import sys
+import os
+from optparse import OptionParser
+try:
+    from apns import APNs, Frame, Payload
+except ImportError:
+    print 'ERROR: please install APNs first. you can type follow command to install: easy_install apns'
+    sys.exit()
+
+parser = OptionParser(usage="%prog [option] device_token content")
+parser.parse_args()
+
+if len(sys.argv) != 3:
+    parser.print_help()
+    sys.exit()
+
+if not os.path.isfile('cert.pem') or not os.path.isfile('key.pem'):
+    print 'ERROR: no found cert.pem or key.pem, please use pem-generator to generate cert.pem and key.pem'
+    sys.exit()
+
+apns = APNs(use_sandbox=True, cert_file='cert.pem', key_file='key.pem')
+
+# Send a notification
+token = sys.argv[1]
+content = sys.argv[2]
+
+payload = Payload(alert=content, sound="default", badge=0)
+apns.gateway_server.send_notification(token, payload)
