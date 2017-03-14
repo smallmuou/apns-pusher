@@ -30,7 +30,7 @@ For Develop
 ├── Apple Development IOS Push Services: com.apple.test     - right click to export cert.p12
 │   └── xxxx                                                - right click to export key.p12
 
-For Release
+For Release(Apple Store)
 
 ├── Apple Push Services: com.apple.test                     - right click to export cert.p12
 │   └── xxxx                                                - right click to export key.p12
@@ -53,6 +53,8 @@ For Develop
 chmod +x apns-develop-pusher
 ./apns-develop-pusher 9e31c2f3c5d9b21a006996f1ae772b205d0c1115671e5b64f7a779ff1e0b1 hello
 ```
+
+For Release(Apple Store)
 
 ```
 chmod +x apns-release-pusher
