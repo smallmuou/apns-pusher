@@ -6,7 +6,7 @@
 
 Before use this tool you must prepare like follow:
 
-##### 1. Install python on you pc (Most computers have their own)，type follow command to check.
+##### 1. Install python on your pc (Most computers have their own)，type follow command to check.
 
 ```
 python --version
@@ -22,18 +22,18 @@ or
 pi install apns
 ```
 
-##### 3. export cert.p12 and key.p12. go to 'Keychain Access' and select the item. like follow:
+##### 3. export cert.p12 and key.p12. Go to 'Keychain Access' and export like follow(Must on Mac OS):
 
 ```
 For Develop
 
-├── Apple Development IOS Push Services: com.apple.test    	- right click to export cert.p12
-│   └── xxxx												- right click to export key.p12
+├── Apple Development IOS Push Services: com.apple.test     - right click to export cert.p12
+│   └── xxxx                                                - right click to export key.p12
 
 For Release
 
-├── Apple Push Services: com.apple.test    	- right click to export cert.p12
-│   └── xxxx								- right click to export key.p12
+├── Apple Push Services: com.apple.test                     - right click to export cert.p12
+│   └── xxxx                                                - right click to export key.p12
 
 ```
 
