@@ -43,6 +43,7 @@ For Release
 chmod +x pem-generator 
 ./pem-generator cert.p12 key.p12
 ```
+PS: Will generate cert.pem and key.pem in current directory.
 
 ## Usage 
 
