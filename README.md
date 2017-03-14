@@ -6,13 +6,13 @@
 
 Before use this tool you must prepare like follow:
 
-1. Install python on you pc (Most computers have their own)，type follow command to check.
+##### 1. Install python on you pc (Most computers have their own)，type follow command to check.
 
 ```
 python --version
 ```
 
-2. Install apns module, you can use easy_install or pip to install it 
+##### 2. Install apns module, you can use easy_install or pip to install it 
 
 ```
 easy_install apns
@@ -22,7 +22,7 @@ or
 pi install apns
 ```
 
-3. export cert.p12 and key.p12. go to 'Keychain Access' and select the item. like follow:
+##### 3. export cert.p12 and key.p12. go to 'Keychain Access' and select the item. like follow:
 
 ```
 For Develop
@@ -37,7 +37,7 @@ For Release
 
 ```
 
-4. use `pem-generator` to generate cert.pem and key.pem
+##### 4. use `pem-generator` to generate cert.pem and key.pem
 
 ```
 chmod +x pem-generator 
